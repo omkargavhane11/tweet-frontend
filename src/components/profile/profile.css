@@ -1,0 +1,94 @@
+.profile_top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.profile_details {
+  margin-top: 10px;
+}
+
+.divider {
+  margin: 0px 50px;
+}
+
+.profile_avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile_avatar_image {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  object-fit: contain;
+}
+
+.profile_details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.prolife_follow_btn {
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0px;
+  background-color: rgb(3, 146, 213);
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.profile_edit_btn {
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0px;
+  background-color: cadetblue;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+
+.profile_name {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.profile_item {
+  /* color: gray; */
+  font-weight: 350;
+}
+
+.profile_bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.profile_posts {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.save_or_cancel_dp {
+  display: flex;
+  gap: 5px;
+}
+
+.profile_name_input {
+  padding: 3px;
+  font-size: 15px;
+  border: 1px solid gray;
+}

@@ -1,0 +1,62 @@
+.register {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.register_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-width: 350px;
+}
+
+.register_input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.register_input > input {
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  padding: 0px 5px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+  border-bottom: 1px solid gray;
+}
+
+.register_checkbox {
+  height: 18px;
+  width: 18px;
+  margin-top: 5px;
+}
+
+.register_button {
+  height: 35px;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  background-color: cadetblue;
+  cursor: pointer;
+  color: #fff;
+}
+
+.register_link {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+p {
+  margin-top: 30px;
+}

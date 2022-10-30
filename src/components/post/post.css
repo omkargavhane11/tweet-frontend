@@ -1,0 +1,199 @@
+.p {
+  width: 550px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.p_top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.p_top_left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p_avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.p_time {
+  font-size: 12px;
+}
+
+.p_center {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.p_text {
+  font-weight: 300;
+}
+
+.p_text,
+.p_bottom {
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.p_media_item {
+  width: 100%;
+  object-fit: contain;
+}
+
+.p_bottom {
+  margin: 8px 0px;
+  display: flex;
+  /* align-items: ; */
+  gap: 15px;
+}
+
+.p_buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid rgb(210, 210, 210);
+  border-bottom: 1px solid rgb(210, 210, 210);
+  padding: 5px 0px;
+  box-sizing: border-box;
+}
+
+.p_buttons > button {
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.p_buttons > div {
+  display: flex;
+  gap: 5px;
+}
+.p_likeIcon,
+.p_comment_icon {
+  cursor: pointer;
+}
+
+.p_likeIcon.liked {
+  /* background-color: red; */
+  color: red;
+  cursor: pointer;
+}
+
+.p_comments {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.p_comment_input {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.p_comment_right {
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background-color: rgb(239, 239, 239);
+}
+
+.p_comment_right_top {
+  width: 100%;
+  border-radius: 4px;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.p_comment_right_bottom {
+  display: flex;
+  gap: 10px;
+  padding-left: 5px;
+}
+
+.p_comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.p_comment_by {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.p_comment_text {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.p_comment_input_div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* background-color: aqua; */
+  height: 50px;
+  margin-bottom: 10px;
+}
+.p_comment_input {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid rgb(213, 213, 213);
+}
+
+.p_post_button {
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: cadetblue;
+  color: white;
+  height: 40px;
+}
+
+.p_comment_name_and_time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p_delete {
+  font-size: 13px;
+  color: gray;
+  text-decoration: underline;
+}
+
+.p_delete:hover {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.p_name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

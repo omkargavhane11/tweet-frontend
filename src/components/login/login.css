@@ -1,0 +1,136 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 30vh;
+  box-sizing: border-box;
+  /* background-color: cadetblue; */
+}
+
+.login_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-width: 350px;
+}
+
+.login_input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.login_input > input {
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  padding: 0px 5px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+  border-bottom: 1px solid gray;
+}
+
+.login_password_checkbox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login_checkbox {
+  height: 18px;
+  width: 18px;
+  color: cadetblue;
+  background-color: cadetblue;
+}
+
+.login_button {
+  height: 35px;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  background-color: cadetblue;
+  cursor: pointer;
+  color: #fff;
+}
+
+.login_link {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+p {
+  margin-top: 30px;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  /* -webkit-animation: fadein 0.5s, fadeout 0.5s 4s; */
+  animation: fadein 0.5s, fadeout 0.5s 3s;
+}
+
+/* @-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+} */
+
+@keyframes fadein {
+  from {
+    top: -30px;
+    opacity: 0;
+  }
+  to {
+    top: 30px;
+    opacity: 1;
+  }
+}
+
+/* @-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+} */
+
+@keyframes fadeout {
+  from {
+    top: 30px;
+    opacity: 1;
+  }
+  to {
+    top: -30px;
+    opacity: 0;
+  }
+}

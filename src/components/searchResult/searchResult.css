@@ -1,0 +1,51 @@
+.sr {
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 0px 4px 0px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 0.5px;
+}
+
+.sr_wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.sr_avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.sr_right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sr_btns {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.sr_view_profile {
+  border: none;
+  padding: 4px;
+  border-radius: 5px;
+  color: cadetblue;
+  border: 1px solid cadetblue;
+  background-color: white;
+  cursor: pointer;
+  width: 100px;
+}
+
+.sr_follow {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: cadetblue;
+  cursor: pointer;
+  width: 100px;
+}

@@ -1,0 +1,104 @@
+.n {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  background-color: cadetblue;
+  position: sticky;
+  top: 0px;
+  color: #fff;
+}
+
+.n_left {
+  font-size: 25px;
+  text-decoration: wavy;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.n_search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 0px 5px;
+  margin: 10px;
+  width: 400px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.n_search_input {
+  background: transparent !important;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  width: 90%;
+  padding: 5px;
+}
+
+.n_search_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* width: 10%; */
+  /* border-left: 1px solid #000; */
+  padding: 5px;
+  color: #000;
+}
+
+.n_search_icon > button {
+  border: none;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.n_right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.n_dp {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.n_avatar_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.n_model {
+  background-color: #fff;
+  color: #000;
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0px;
+}
+
+.n_model_item {
+  cursor: pointer;
+  width: 80px;
+  text-align: center;
+  padding: 5px;
+}
+
+.n_model_item:hover {
+  background-color: lightgray;
+}
