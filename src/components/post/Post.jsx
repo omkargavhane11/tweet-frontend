@@ -9,6 +9,7 @@ import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Comment from "../comment/Comment";
+import { API } from "../../common.js";
 
 const Post = ({ p }) => {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ const Post = ({ p }) => {
 
     try {
       const { data } = await axios.post(
-        `http://localhost:8800/comment/new/${postId}`,
+        `${API}/comment/new/${postId}`,
         newComment
       );
       if (data.msg === "success") {
@@ -59,10 +60,7 @@ const Post = ({ p }) => {
 
     try {
       if (!isLiked) {
-        const handleLike = await axios.put(
-          `http://localhost:8800/post/like/${postId}`,
-          payload
-        );
+        const handleLike = await axios.put(`${API}/${postId}`, payload);
         console.log(handleLike.data.msg);
         if (handleLike.data.msg === "liked") {
           setisLiked(!isLiked);
@@ -70,7 +68,7 @@ const Post = ({ p }) => {
         }
       } else {
         const handleLike = await axios.put(
-          `http://localhost:8800/post/dislike/${postId}`,
+          `${API}/post/dislike/${postId}`,
           payload
         );
         console.log(handleLike.data.msg);
