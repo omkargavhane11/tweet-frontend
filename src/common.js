@@ -1,1 +1,1 @@
-export const API = "http://localhost:8800";
+export const API = "https://tweet-web.herokuapp.com";
