@@ -1,1 +1,1 @@
-export const API = "https://tweet-web.herokuapp.com";
+export const API = process.env.production ? "https://tweet-backend-production.up.railway.app" : "http://localhost:8080";
